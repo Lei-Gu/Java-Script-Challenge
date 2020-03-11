@@ -33,11 +33,20 @@
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
                 <form>
+                  <select name ="filter-type" id="filter-type">
+                    <option value="datetime" selected >Date</option>
+                    <option value="city">City</option>
+                    <option value="state">State</option>
+                    <option value="country">Country</option>
+                    <option value="shape">Shape</option>
+                  </select>
+
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="datetime">Categories Search</label>
+                        
+                        <input class="form-control" id="searchinput" type="text" placeholder="1/11/2011">
                       </li>
                     </ul>
                   </div>
